@@ -1,0 +1,26 @@
+2D Graphics Editor Using '*' and '_'
+Problem Statement
+
+Design and implement a simple 2D Graphics Editor in C using a 2D character array to represent a drawing canvas. The editor should allow users to create and manage basic geometric shapes using the characters * and _.
+
+Requirements
+Use a 2D array of characters as the drawing canvas.
+Implement functions to:
+Draw a Rectangle
+Draw a Line
+Draw a Triangle
+Draw a Circle
+Provide options to:
+Add objects to the canvas
+Delete objects or selected areas from the canvas
+Display the current canvas
+Use a menu-driven interface for user interaction.
+Represent drawn pixels using * and empty spaces using _.
+Features Implemented
+Rectangle Drawing
+Line Drawing (Bresenham Algorithm)
+Triangle Drawing
+Circle Drawing
+Delete Area Functionality
+Canvas Display
+Menu-Driven Operations
