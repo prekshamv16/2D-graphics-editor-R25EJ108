@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Carter | Portfolio & Systems Developer</title>
+  <!-- Outfit & Inter Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Background Gradients -->
+  <div class="bg-blur-blob blob-1"></div>
+  <div class="bg-blur-blob blob-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">AC<span>.dev</span></a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link btn-contact-nav">Get In Touch</a>
+      </div>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark theme">
+        <!-- Moon Icon -->
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+        <!-- Sun Icon -->
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+        </svg>
+      </button>
+      <button class="menu-mobile-btn" aria-label="Open Mobile Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#contact" class="mobile-link btn-mobile-contact">Get In Touch</a>
+  </div>
+
+  <!-- Main Grid Layout -->
+  <main class="container">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">Available for opportunities</div>
+        <h1 class="hero-title">Crafting Fast, <br>Reliable <span>Systems Software</span></h1>
+        <p class="hero-subtitle">Senior Systems Developer specializing in memory compilers, lock-free concurrency, and distributed key-value core engines.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore Work</a>
+          <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+        </div>
+      </div>
+      <div class="hero-graphic">
+        <div class="graphic-circle"></div>
+        <div class="avatar-container">
+          <img src="avatar.png" alt="Alex Carter Profile Headshot" class="avatar-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hi, I'm Alex. I have spent the last 5+ years building and optimizing database engine storage cores and high-throughput systems infrastructure. I enjoy translating complex, concurrent design concepts into lightweight, crash-safe, and cache-aligned code.</p>
+          <p>Whether it's hacking on a custom log-structured merge storage compiler, configuring bare-metal compiler targets, or profiling thread contention blocks, I focus on maximum system efficiency and software safety.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-lbl">Years Industry Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">12K+</div>
+            <div class="stat-lbl">Lines of low-level C/C++ written</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">15+</div>
+            <div class="stat-lbl">Open-Source Core Utilities</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-category-card">
+          <h3>Systems Programming</h3>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-meta"><span>C / C++ (POSIX)</span><span>95%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+            </li>
+            <li>
+              <div class="skill-meta"><span>Rust (Concurrency)</span><span>80%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+            </li>
+            <li>
+              <div class="skill-meta"><span>x86 Assembly / Compiler IR</span><span>70%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 70%"></div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="skill-category-card">
+          <h3>Databases & Infrastructure</h3>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-meta"><span>Log-Structured Merge Trees</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+            </li>
+            <li>
+              <div class="skill-meta"><span>PostgreSQL / SQLite Storage</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+            </li>
+            <li>
+              <div class="skill-meta"><span>Linux Kernel Memory Map</span><span>75%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="skill-category-card">
+          <h3>Tools & Workflows</h3>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-meta"><span>Linux / POSIX Tooling</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+            </li>
+            <li>
+              <div class="skill-meta"><span>Docker / CMake Build Pipelines</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+            </li>
+            <li>
+              <div class="skill-meta"><span>Valgrind / GDB Profiling</span><span>80%</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-project-id="1">
+          <div class="project-img-placeholder">
+            <span>AstraDB Core</span>
+          </div>
+          <div class="project-details">
+            <span class="project-tag">Systems Storage</span>
+            <h3>AstraDB Log-Structured Storage</h3>
+            <p>A persistent, high-throughput key-value engine featuring thread-safe transaction queues and memory mapped caching structures.</p>
+            <button class="btn-text btn-modal-trigger">Learn Details &rarr;</button>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card" data-project-id="2">
+          <div class="project-img-placeholder">
+            <span>ToyC Compiler</span>
+          </div>
+          <div class="project-details">
+            <span class="project-tag">Language Design</span>
+            <h3>ToyC Compiler frontend</h3>
+            <p>A subset C parser, tokenizer, lexical analyzer, and compiler producing LLVM Intermediate Representation, featuring syntax diagnostic overlays.</p>
+            <button class="btn-text btn-modal-trigger">Learn Details &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="experience-section scroll-reveal">
+      <h2 class="section-title">Work Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 - Present</div>
+          <div class="timeline-content">
+            <h3>Lead Systems Developer</h3>
+            <span class="timeline-org">Kernel Technologies Inc.</span>
+            <p>Designed a custom lock-free memory allocator in C, decreasing transaction overhead by 22% and eliminating critical thread lock contentions. Optimized memory mapped paging algorithms for LSM database cores.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021 - 2023</div>
+          <div class="timeline-content">
+            <h3>Software Systems Engineer</h3>
+            <span class="timeline-org">ByteWave Automation</span>
+            <p>Developed optimized low-latency TCP communication layers for ARM bare-metal devices. Resolved legacy memory safety leaks, decreasing standard heap sizes by 18%. Configured CMake targets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <h2 class="section-title">Send a Message</h2>
+      <div class="contact-card">
+        <form id="portfolio-contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required placeholder="e.g. John Doe">
+              <span class="error-msg">Name is required.</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required placeholder="e.g. name@domain.com">
+              <span class="error-msg">Please enter a valid email.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message Body</label>
+            <textarea id="message" rows="5" required placeholder="Tell me about your systems projects..."></textarea>
+            <span class="error-msg">Please write a brief message.</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span>Send Message</span>
+            <div class="spinner hide"></div>
+          </button>
+          <div class="submit-success-alert hide">
+            Thank you! Your message has been sent successfully. I will get back to you shortly.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Foot Note -->
+  <footer class="footer">
+    <p>&copy; 2026 Alex Carter. Written in Vanilla HTML, CSS, and JS.</p>
+  </footer>
+
+  <!-- Detail Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <span class="modal-project-tag">Systems</span>
+        <h2 class="modal-project-title">Project Name</h2>
+        <div class="modal-meta-grid">
+          <div>
+            <strong>Tech Stack:</strong>
+            <p class="modal-project-stack">C, POSIX, mmap</p>
+          </div>
+          <div>
+            <strong>Repository Link:</strong>
+            <p><a href="https://github.com" target="_blank" class="modal-project-link">github.com/alexcarter/astradb</a></p>
+          </div>
+        </div>
+        <div class="modal-project-description">
+          <p>Detailed explanation goes here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
